@@ -1,0 +1,24 @@
+/* CSS HEX */
+:custom-root {
+--dark-slate-gray: #36453bff;
+--dim-gray: #596869ff;
+--ebony: #515751ff;
+--ivory: #f5f9e9ff;
+--sage: #c2c1a5ff;
+}
+
+.navbar-color{
+    background-color: #17301c;
+}
+
+.page-color {
+    background-color: #8baaad;
+}
+
+.main-page-text-color {
+    color: #000000;
+}
+
+.navbar-text-color {
+    color: #8baaad;
+}
