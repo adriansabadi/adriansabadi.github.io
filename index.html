@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script type="text/javascript" src="js/theme.js"></script>
 </head>
 
 <body class="body">
@@ -38,6 +39,8 @@
                         </li>
                     </ul>
                 </div>
+                <button class="header__nav-button" onclick="toggleColorTheme()" id="switchColorThemeButton">
+                </button>
                 <button class="header__nav-button menu__button" id="mobileMenuButton" aria-expanded="false"
                     aria-controls="navigation-menu" data-target="navigation-menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -598,6 +601,8 @@
             }
         }
         document.addEventListener('DOMContentLoaded', function () {
+            setColorThemeButtonIcon(document.documentElement.dataset["theme"]);
+
             const menuButton = document.getElementById("mobileMenuButton");
             menuButton.addEventListener('click', () => {
                 const target = menuButton.dataset.target;
