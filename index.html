@@ -22,8 +22,8 @@
         <div class="container">
             <nav class="header__nav" role="navigation" aria-label="main navigation">
                 <div class="header__nav-brand-container">
-                    <a href="index.html" class="header__nav-link header__nav-brand-link">
-                        <span class="brand-logo">adrian.sabadi</span>
+                    <a href="/" class="brand-logo header__nav-brand-link">
+                        adrian<span>.</span>sabadi
                     </a>
                 </div>
                 <div class="header__nav-menu" id="navigation-menu">
@@ -59,18 +59,24 @@
         </div>
     </header>
     <main class="main">
-        <section class="hero">
-            <div class="container">
+        <div class="container">
+            <section class="hero">
                 <div class="hero__content">
-                    <h1 class="hero__display">Bienvenido, mi nombre es
-                        <span class="hero__emphasis">Adrián.</span>
-                    </h1>
-                    <p class="hero__text">Soy un desarrollador web fullstack y estudiante de Ingeniería Informática.</p>
+                    <div>
+                        <h1 class="hero__display">Hola, mi nombre es <span class="hero__emphasis">Adrián.</span></h1>
+                        <p class="hero__text">Soy un desarrollador web fullstack freelancer y estudiante de Ingeniería
+                            Informática. Mi trabajo consiste en el desarrollo de aplicaciones informáticas
+                            que solucionen problemas de los clientes, con un enfoque en el buen diseño, la optimización
+                            de los recursos,
+                            la mantenibilidad y el rendimiento.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="img/photo-1.jpg" alt="Adrián Sabadí photo">
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="section about" id="aboutMe">
-            <div class="container">
+            </section>
+            <section class="section about" id="aboutMe">
                 <div class="about__content">
                     <h2 class="section__title">Acerca de mí</h2>
                     <div>
@@ -487,12 +493,10 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section projects" id="projects">
-            <div class="container">
+            </section>
+            <section class="section projects" id="projects">
                 <h2 class="section__title">Mis Proyectos</h2>
-                <div>
+                <div class="projects__container">
                     <ul class="projects__list">
                         <li class="project">
                             <div class="project__card">
@@ -524,10 +528,8 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        <section class="section contact" id="contact">
-            <div class="container">
+            </section>
+            <section class="section contact" id="contact">
                 <h2 class="section__title">Contacto</h2>
                 <div class="contact__content">
                     <div>
@@ -582,18 +584,17 @@
                             </div>
                             <input type="text" name="_gotcha" style="display:none" />
                             <div class="h-captcha" data-sitekey="cba86a9a-9fe4-46d2-a766-fc7e5cdae02a"></div>
-                            <button type="submit" value="Submit" class="contact__submit-button">Enviar</button>
+                            <button type="submit" value="Submit" class="contact__submit-button">Enviar mensaje</button>
                         </form>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
-                <span class="brand-logo">adrian.sabadi</span>
-                <span>©<time datetime="18-04-2026">2026</time>. Todos los derechos reservados</span>
+                <span>© <time datetime="18-04-2026">2026</time> Adrián Sabadí. Todos los derechos reservados</span>
             </div>
         </div>
     </footer>
